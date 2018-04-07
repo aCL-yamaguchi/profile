@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- cssの読み込み -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="css/swiper.min.css">
+<!-- jQueryの読み込み -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/getDeals.js"></script>
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<nav id="menu" class="navbar navbar-default navbar-fixed-top on">
+  <div id="container">
+    <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse" id="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href='#profile'class="page-scroll">Profile</a>
+          </li>
+          <li>
+            <a href='#introduction' class="page-scroll">Introduction</a>
+          </li>
+          <li>
+            <a href='#hobby' class="page-scroll">Hobby</a>
+          </li>
+          <li>
+            <a href='#future' class="page-scroll">Future</a>
+          </li>
+          <li>
+            <a href='#deals' class="page-scroll">DEALS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="clear"></div>
+
+<div id='profile' class="section top_img">
+  <div class="prof_info">
+    <p>NAME:　ARATA&nbspYAMAGUCHI<br>
+       AGE:　 22<br>
+       BLOODTYPE:　A<br>
+       WORK:　WEBENGINER
+     </p>
+  </div>
+</div>
+
+<div id='introduction' class="section">
+  <div class="title">INTRODUCTION</div>
+  <div class="introduction">
+    <p>Born in 1994, 22 years old. <br>
+    My hobbies are sports, programming, outdoor, indoor things. <br>
+    Recently I play golf. Back pain was improved by playing golf. <br>
+    Talking a bit, I want to become a growth hacker in the future. <br>
+    I want to be an engineer with not only technology but also a marketing perspective. <br>
+    The main technologies are Java · CSS · JavaScript · JQuery · Git.<br>
+    I am still in the process of growth but thanking you in advance.</div>
+  </p>
+</div>
+
+<div id='hobby' class="section">
+  <div class="title">HOBBY</div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/travel.jpg" /></div>
+        <div class="swiper-slide"><img src="img/bouldering.jpg" /></div>
+        <div class="swiper-slide"><img src="img/soccer.jpg" /></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='future' class="section">
+  <div class="title">FUTURE</div>
+  <div class="future-container">
+    <div class="future-left">
+      <h2>I want to become a <strong>Growth Hackers</strong></h2>
+      <h3>Five qualities necessary for Growth Hackers</h3>
+      <p>1. Analyticity<br>
+        2. Broad interest<br>
+        3. Creative<br>
+        4. Discipline<br>
+        5. Empathy
+      </p>
+    </div>
+    <div class="future-right">
+        <img src="img/growth.jpg" />
+    </div>
+  </div>
+</div>
+
+<div id='deals' class="section">
+  <div class="title">DEALS</div>
+  <div class="deals-container">
+  </div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+<!-- フェードイン -->
+$(document).ready(function() {
+  $('.top_img').fadeIn(2000);
+});
+
+<!-- スムーズスクロール -->
+
+<!-- スライドショー -->
+var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 30,
+        freeMode: true
+    });
+</script>
