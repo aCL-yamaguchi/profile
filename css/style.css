@@ -97,8 +97,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
-	color: #eee;
-	font-weight: 400;
+	color: white;
+	font-weight: 500;
 	font-size: 15px;
 	padding: 5px 0;
 	border: 2px solid transparent;
@@ -106,7 +106,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin: 0 40px 0 40px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-	color: #d43031;
+	color: gray;
 }
 .on {
 	background-color: #262626 !important;
